@@ -63,3 +63,13 @@ Started GET "/hello" for 127.0.0.1 at 2012-04-22 20:55:31 -0500
 Processing by HelloController#index as HTML
   Rendered text template (0.0ms)
 Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-04-22 21:42:30 -0500
+Served asset /rails.png - 304 Not Modified (18ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2012-04-22 21:42:32 -0500
+Processing by HelloController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 145ms (Views: 145.0ms | ActiveRecord: 0.0ms)
