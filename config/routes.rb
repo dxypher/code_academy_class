@@ -1,4 +1,5 @@
 CodeAcademyClass::Application.routes.draw do
+  get "hello", :controller => "hello", :action => "index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
