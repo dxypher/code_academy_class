@@ -1,0 +1,7 @@
+<h1>Nick's Restaurant Recommendations</h1>
+
+<ul>
+<% @recommended.each do |rec| %>
+<li><%= "#{rec.type.capitalize}: #{rec.name}" %></li>
+<%end%>
+</ul>
