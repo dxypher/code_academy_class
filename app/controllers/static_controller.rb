@@ -1,10 +1,10 @@
 class StaticController < ApplicationController
 	def index
-		render 'static/index'
+		
 	end
 
-	def movie
-		render 'static/movies'
+	def movies
+		
 	end
 
 	def microsoft

@@ -1,3 +1,3 @@
 class Restaurant < ActiveRecord::Base
-  attr_accessible :name, :type
+  attr_accessible :name, :cuisine
 end

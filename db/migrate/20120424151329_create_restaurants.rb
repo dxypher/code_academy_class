@@ -6,5 +6,8 @@ class CreateRestaurants < ActiveRecord::Migration
 
       t.timestamps
     end
+    change_table :restaurants do |t|
+	  t.rename :type, :cuisine
+	end
   end
 end

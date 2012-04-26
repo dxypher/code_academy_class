@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20120424151329) do
 
   create_table "restaurants", :force => true do |t|
-    t.string   "type"
+    t.string   "cuisine"
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
