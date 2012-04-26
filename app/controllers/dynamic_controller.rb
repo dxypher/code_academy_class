@@ -16,7 +16,7 @@ class DynamicController < ApplicationController
 
 		new_recommedation.save
 
-		redirect_to "http://localhost:3000/restaurants"
+		redirect_to "/restaurants"
 	end
 
 
