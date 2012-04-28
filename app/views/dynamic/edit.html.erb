@@ -1,0 +1,9 @@
+<h2>Edit Restaurant</h2>
+
+<%= form_tag "/restaurants/#{@restaurant.id}", :method => :put do%>
+	<%=label_tag "Cuisine:"%>
+	<%= text_field_tag "cuisine", @restaurant.cuisine  %>
+	<%=label_tag "Restaurant Name:"%>
+	<%= text_field_tag "name", @restaurant.name  %>
+	<%= submit_tag "Submit Changes"	%>
+<% end %>

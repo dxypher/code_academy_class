@@ -8,5 +8,11 @@ CodeAcademyClass::Application.routes.draw do
   get "restaurants", :controller => "dynamic", :action => "restaurants"
   get "restaurants/recommend", :controller => "dynamic", :action => "recommend"
 
+  get "restaurants/:id", :controller => "dynamic", :action => "restaurant_info"
+  delete "restaurants/:id", :controller => "dynamic", :action => "delete"
+  
+  get "restaurants/:id/edit", :controller => "dynamic", :action => "edit"
+  put "restaurants/:id", :controller => "dynamic", :action => "update"
+
   post "restaurants/create", :controller => "dynamic",	:action => "create"
 end

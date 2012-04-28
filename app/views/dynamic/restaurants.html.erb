@@ -2,7 +2,14 @@
 
 <ul>
 <% @recommended.each do |rec| %>
-<li><%= rec.cuisine.capitalize %> : <%= rec.name %></li>
-<%end%>
+<li><%= rec.cuisine.capitalize %> :<a href="restaurants/<%= rec.id %>"> <%= rec.name %> </a>
+ | 
+ <a href="restaurants/<%= rec.id %>/edit">Edit</a>
+ | 
+ <%= link_to "Delete",
+ 			 "restaurants/#{rec.id}", 
+ 			 :method => :delete, :confirm => "WAIT!!! Are you sure you want to delete."%>
+ <%end%>
+
 </ul>
 <a href="/restaurants/recommend" >Recommend a New Restaurant!</a>
